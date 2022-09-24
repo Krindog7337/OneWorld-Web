@@ -1,0 +1,178 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f5f5f5;
+}
+header {
+  background:#5F3F2A;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+  height: auto;
+  color:#f5f5f5;
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  cursor: pointer;
+  padding: 10;
+}
+
+.logo-img {
+  width: auto;
+  height: 40px;
+  background-size:cover;
+  margin:5px 5px 5px 5px;
+  padding: 10px;  
+  
+}
+nav ul{
+  display: flex;
+  margin: 0px;
+  padding: 10px;
+  list-style-type: none;
+  overflow: hidden;
+}
+.topli {
+  padding: 0px 4px;
+  color:#f5f5f5;
+  float: left;
+} 
+
+.topli a {
+  width: 80px;
+  font-size: 1.1em;
+  color:#f5f5f5;
+  display: block;
+  text-align: center;
+  padding:0px 0px;
+  text-decoration:none;
+  transition: ease-in 0.10s;
+}
+
+.topli a:hover {
+  color:#aaaaaa;  
+}
+
+hr {
+  text-align:center;
+  width:85%;
+  background-color: #5F3F2A;
+  height: 1px;
+  border: 0;
+}
+
+.banner-pic {
+  padding:20px;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("src/baksos-one-world.JPG");
+  height:30vw;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:100%;
+  position:relative;
+}
+
+.banner-body {
+  color: #f5f5f5;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Helvetica;
+}
+
+.body {
+  margin:0px 5vw;
+  font-size: 16px;
+}
+
+.gap {
+  height: 20px;
+
+}
+.bodyimg {
+  width:34vw;
+  height:auto;
+  background-size:cover;
+  border-radius:12px;
+  float:left;
+  background-position:center;
+
+}
+.body1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin:2vw;
+  size:10px;
+  
+}
+
+.h2body {
+  font-weight:lighter;
+  color:#5F3F2A
+}
+.grid-item-text {
+  padding:0 4vw;
+  align-self: center;
+}
+
+.body2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin:2vw;
+  size:10px;
+}
+
+.body-support {
+  margin: 2vw;
+  text-align: center;
+}
+
+.bdonate {
+  padding:1em;
+  margin:10px;
+}
+.button-donate {
+  background-color: #5F3F2A;
+  color: #f5f5f5;
+  padding: 1em;
+  border-radius: 8px;
+  font-size:1.1em ;
+  text-decoration: none;
+  transition: ease-in 0.10s;
+}
+.button-donate:hover {
+  color: #aaaaaa;
+}
+
+footer {
+  display: block;
+  background-color: #1b1b1b;
+  color:#f5f5f5
+
+}
+
+.foo-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 5px;
+}
+.fooul {
+  display: block;
+  list-style-type:none;
+  
+}
+
+.fooli {
+  padding-top: 10px;
+  
+}
+.fooli a {
+  color:#f5f5f5;
+  text-decoration: none;
+}
