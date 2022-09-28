@@ -5,57 +5,97 @@ html, body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: #f5f5f5;
 }
+
+
+/* Header */
 header {
-  background:#5F3F2A;
-  display:flex;
-  flex-wrap: wrap;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('src/baksos-one-world.JPG');
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
   justify-content:center;
-  align-items:center;
-  height: auto;
-  color:#f5f5f5;
+  align-items:flex-end;
+  height: 100vh;
+  color: #f5f5f5;
 }
 
-.logo {
-  margin-right: auto;
-  display: flex;
-  cursor: pointer;
-  padding: 10;
+.header-content {
+  text-align: center;
+  width: 100%;
 }
 
-.logo-img {
+.header-content h1 {
+  font-size: 15vmin;
+  font-family: Montserrat;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+  font-family: Montserrat;
+}
+
+.header-join {
+  padding: 16px;
+  margin: 4vw auto;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+/* Header Navigation */
+/* Need more JS */
+.logo-nav {
   width: auto;
-  height: 40px;
+  height: 50px;
   background-size:cover;
-  margin:5px 5px 5px 5px;
-  padding: 10px;  
-  
-}
-nav ul{
-  display: flex;
-  margin: 0px;
   padding: 10px;
-  list-style-type: none;
-  overflow: hidden;
 }
-.topli {
-  padding: 0px 4px;
-  color:#f5f5f5;
-  float: left;
-} 
 
-.topli a {
+.navbar {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.0));
+  display:flex;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  padding: 20px 5vw;
+  justify-content: space-between;
+}
+
+ul {
+  padding:0;
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-list li {
   width: 80px;
+  padding: 5px
+
+}
+.topli a {
   font-size: 1.1em;
   color:#f5f5f5;
   display: block;
   text-align: center;
-  padding:0px 0px;
   text-decoration:none;
   transition: ease-in 0.10s;
 }
 
+.topli:nth-child(4) a {
+  padding: 5px 5px;
+  background-color:#f5f5f5;
+  color: #5F3F2A;
+  border-radius: 10px;
+}
+
 .topli a:hover {
-  color:#aaaaaa;  
+  color:#aaaaaa;
 }
 
 hr {
@@ -66,27 +106,8 @@ hr {
   border: 0;
 }
 
-.banner-pic {
-  padding:20px;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("src/baksos-one-world.JPG");
-  height:30vw;
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:100%;
-  position:relative;
-}
-
-.banner-body {
-  color: #f5f5f5;
-  text-align: center;
-  position: relative;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: Helvetica;
-}
-
-.body {
+/* Main Web */
+.wrapper {
   margin:0px 5vw;
   font-size: 16px;
 }
@@ -95,7 +116,34 @@ hr {
   height: 20px;
 
 }
-.bodyimg {
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  font-weight: lighter;
+  color: #5F3F2A;
+  
+}
+
+/* grid main body*/
+
+.grid:nth-child(odd) {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 2vw;
+  size: 10px;
+}
+
+.grid:nth-child(even) {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: 'gridtext' 'gridimg';
+  margin: 2vw;
+  size: 10px;
+}
+
+.gridimg {
   width:34vw;
   height:auto;
   background-size:cover;
@@ -104,52 +152,50 @@ hr {
   background-position:center;
 
 }
-.body1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin:2vw;
-  size:10px;
-  
-}
 
-.h2body {
-  font-weight:lighter;
-  color:#5F3F2A
-}
-.grid-item-text {
+.gridtext {
   padding:0 4vw;
   align-self: center;
 }
 
-.body2 {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin:2vw;
-  size:10px;
+.gridtext h2 {
+  font-weight:lighter;
+  color:#5F3F2A
 }
 
-.body-support {
+.gridimg {
+  align-self: center;
+}
+
+
+
+/* Support Us */
+
+.donate {
   margin: 2vw;
   text-align: center;
 }
 
-.bdonate {
-  padding:1em;
-  margin:10px;
+.donate h2 {
+  font-weight:lighter;
+  color:#5F3F2A;
 }
+
 .button-donate {
   background-color: #5F3F2A;
   color: #f5f5f5;
-  padding: 1em;
+  border:none;
+  padding: 12px;
   border-radius: 8px;
   font-size:1.1em ;
   text-decoration: none;
   transition: ease-in 0.10s;
 }
 .button-donate:hover {
-  color: #aaaaaa;
+  background-color: #796455;
 }
 
+/* Footer */
 footer {
   display: block;
   background-color: #1b1b1b;
@@ -157,22 +203,73 @@ footer {
 
 }
 
-.foo-grid {
+.foogrid {
   display: grid;
   grid-template-columns: auto auto auto;
-  column-gap: 5px;
-}
-.fooul {
-  display: block;
-  list-style-type:none;
-  
+  column-gap:5px;
 }
 
-.fooli {
-  padding-top: 10px;
-  
+.fooul li {
+  display: block;
+  padding:5px;
+  list-style-type:none;
+}
+
+.fooul li a {
+  text-decoration: none;
+  color:#f5f5f5;
+
+
 }
 .fooli a {
   color:#f5f5f5;
-  text-decoration: none;
+  text-decoration: none
+}
+
+.cp {
+  font-size: 12px;
+  margin:0;
+  padding : 5px;
+  text-align: center;
+  color: grey;
+}
+h1, li, img, h2{
+-moz-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+-webkit-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+-moz-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+-o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+/* Responsive mode on */
+@media (max-width:750px){
+  .banner-body{
+    display:none;
+  }
+
+  .body:nth-child(odd) {
+    grid-template-columns: auto;
+  }
+
+  .body:nth-child(even) {
+    grid-template-columns: auto;
+    grid-template-areas:  'grid-item-img2' 'grid-item-text2';
+  }
+
+  .grid-item-text {
+    grid-area: grid-item-text;
+  }
+
+  .grid-item-img {
+    grid-area: grid-item-img;
+  }
+
+  .bodyimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .bodyimg2 {
+    width: 100%;
+    height: auto;
+  }
 }
