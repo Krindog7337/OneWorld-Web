@@ -42,7 +42,8 @@ header {
   color: #DDE3E3;
   border: none;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 1.2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: ease-in-out 0.2s;
 }
 
@@ -127,7 +128,6 @@ hr {
 /* Main Web */
 .wrapper {
   margin: 0px 5vw;
-  font-size: 16px;
 }
 
 .gap {
@@ -165,9 +165,8 @@ hr {
 .gridimg {
   width: 34vw;
   height: 100%;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 10px;
-  background-position: center;
 
 }
 
@@ -243,7 +242,7 @@ hr {
 
 .donate {
   margin: 2vw;
-  text-align: center;
+  text-align: center
 }
 
 .donate h2 {
@@ -257,9 +256,11 @@ hr {
   border: none;
   padding: 12px;
   border-radius: 8px;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   transition: ease-in 0.10s;
+  text-align: center;
 }
 
 .button-donate:hover {
@@ -317,7 +318,7 @@ footer {
 }
 
 /* Responsive mode on */
-@media (max-width:750px) {
+@media (max-width:768px) {
 
   .grid:nth-child(odd) {
     grid-template-columns: auto;
@@ -382,4 +383,16 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
   background-color: #3D455C;
   border-radius: 8px;
+}
+
+
+@media (max-width:768px) {
+  .foogrid {
+    grid-template-columns: auto;
+    row-gap: 10px;
+  }
+  .footer-logo p {
+    margin: 10px 0px;
+    padding: 0px 5px 
+  }
 }
