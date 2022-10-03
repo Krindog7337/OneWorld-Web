@@ -195,6 +195,7 @@ ul {
     background-color: #5F3F2A;
     color: #DDE3E3;
   }
+  
 }
 
 
@@ -298,4 +299,15 @@ footer {
   padding: 5px;
   text-align: center;
   color: grey;
+}
+/* Footer Responsive   */
+@media (max-width:768px) {
+  .foogrid {
+    grid-template-columns: auto;
+    row-gap: 10px;
+  }
+  .footer-logo p {
+    margin: 10px 0px;
+    padding: 0px 5px 
+  }
 }
