@@ -26,169 +26,186 @@
       font-weight: lighter;
     }
   </style>
-  <div class="wrap">
+  <header class="primary-header">
+    <div class="nav-container container flex">
+      <div class="logo-container">
+        <img class="logo" src="src/One-World.png" alt="One World">
+      </div>
 
-  </div>
-  <header>
-    <nav class="navbar">
-      <a href="Home.html"><img class="logo" id="logonav" src="src/One-World.png" alt="one world logo"></a>
-      <ul class="nav-list">
-        <li class="topli"><a href="">Join Us!</a></li>
-        <li class="topli"><a class="thispage" href="Gallery.html">Gallery</a></li>
-        <li class="topli"><a href="donate.html">Donate</a></li>
-        <li class="topli"><a href="https://discord.gg/EytfCJyP">Contact</a></li>
-      </ul>
-    </nav>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html">Donate</a>
+          </li>
+          <li class="active">
+            <a href="Gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="index.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-
   <main>
-    <div class="wrapper">
-      <div class="entry">
-        <section class="title">
-          <h1 class="gallerytitle">One World Gallery</h1>
-          <p>Kumpulan Foto-Foto Kegiatan Organisasi One World</p>
-        </section>
-        <div class="gap"></div>
-        <div class="gallery">
-          <div class="descbox">
-            <div class="pfp">
-              <img src="src/oneworldhead.jpg" alt="">
-              <img src="src/genre.jpeg" alt="">
-            </div>
-            <div class="desc">
-              <h2>One World Berbagi</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi possimus iste, ab blanditiis
-                nemo sunt aut eum quaerat sint tempore. Quas excepturi praesentium illo. Nihil beatae nemo aliquid
-                blanditiis.</p>
-              <button>Album Link</button>
-            </div>
+    <div class="container">
+      <section class="title">
+        <h1 class="gallerytitle">One World Gallery</h1>
+        <p>Kumpulan Foto-Foto Kegiatan Organisasi One World</p>
+      </section>
+      <div class="gap"></div>
+      <div class="gallery">
+        <div class="descbox">
+          <div class="pfp">
+            <img src="src/oneworldhead.jpg" alt="">
+            <img src="src/genre.jpeg" alt="">
           </div>
-          <div class="location">
-            <span class="material-symbols-outlined" id="galleryicon">
-              location_on
-            </span>
-            <h2>Wangaya</h2>
-          </div>
-          <div class="date">
-            <span class="material-symbols-outlined" id="galleryicon">
-              schedule
-            </span>
-            <h2>4 Juli 2022</h2>
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/Wangaya-011-IMG_8042-min.JPG">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/Wangaya-012-IMG_8052-min.JPG">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/Wangaya-013-IMG_8058-min.JPG">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/Wangaya-015-IMG_8081-min.JPG" alt="">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/Wangaya-IMG_8070.JPG" alt="">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/Wangaya-IMG_8093.JPG" alt="">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/Wagaya-new-01-IMG_8043.JPG" alt="">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/Wagaya-new-02-IMG_8060.JPG" alt="">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/Wagaya-new-03-IMG_8087.JPG" alt="">
-          </div>
-          <div class="imgbox tablet-dissapear">
-            <img src="src/Gallery/Wagaya-new-04-IMG_8097.JPG" alt="">
+          <div class="desc">
+            <h2>One World Berbagi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi possimus iste, ab blanditiis
+              nemo sunt aut eum quaerat sint tempore. Quas excepturi praesentium illo. Nihil beatae nemo aliquid
+              blanditiis.</p>
+            <button>Album Link</button>
           </div>
         </div>
-        <div class="gap"></div>
-        <div class="gallery">
-          <div class="descbox">
-            <div class="pfp">
-              <img src="src/oneworldhead.jpg" alt="">
-              <img src="src/genre.jpeg" alt="">
-            </div>
-            <div class="desc">
-              <h2>One World Bakti sosial</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur incidunt, possimus minima
-                perferendis aut necessitatibus voluptatem dolor magnam, accusantium eveniet explicabo. Pariatur
-                accusamus unde ullam, deleniti beatae omnis dicta! Voluptatum!</p>
-              <button>Album Link</button>
-            </div>
-          </div>
-          <div class="location">
-            <span class="material-symbols-outlined" id="galleryicon">location_on</span>
-            <h2>Hope Children</h2>
-          </div>
-          <div class="date">
-            <span class="material-symbols-outlined" id="galleryicon">
-              schedule
-            </span>
-            <h2>4 Juni 2022</h2>
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/HopeChildren-01-017-IMG_8203-min.JPG">
-          </div>
-          <div class="imgbox tablet-dissapear">
-            <img src="src/Gallery/HopeChildren-02-019-IMG_8250-min.JPG">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/HopeChildren-03-005-20220704134854_IMG_2573-min.JPG">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/HopeChildren-04-007-20220704140843_IMG_2634-min.JPG" alt="">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/HopeChildren-05-IMG_2270.JPG" alt="">
-          </div>
-          <div class="imgbox">
-            <img src="src/Gallery/HopeChildren-06-IMG_2388.JPG" alt="">
-          </div>
-          <div class="imgbox" id="ls1">
-            <img src="src/Gallery/HopeChildren-new-01-20220704143031_IMG_2704.JPG" alt="">
-          </div>
-          <div class="imgbox" id="ls2">
-            <img src="src/Gallery/HopeChildren-new-02-IMG_2399-min.JPG" alt="">
-          </div>
+        <div class="location">
+          <span class="material-symbols-outlined galleryicon" id="galleryicon">
+            location_on
+          </span>
+          <h2>Wangaya</h2>
+        </div>
+        <div class="date">
+          <span class="material-symbols-outlined galleryicon" id="galleryicon">
+            schedule
+          </span>
+          <h2>4 Juli 2022</h2>
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/Wangaya-011-IMG_8042-min.JPG">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/Wangaya-012-IMG_8052-min.JPG">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/Wangaya-013-IMG_8058-min.JPG">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/Wangaya-015-IMG_8081-min.JPG" alt="">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/Wangaya-IMG_8070.JPG" alt="">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/Wangaya-IMG_8093.JPG" alt="">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/Wagaya-new-01-IMG_8043.JPG" alt="">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/Wagaya-new-02-IMG_8060.JPG" alt="">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/Wagaya-new-03-IMG_8087.JPG" alt="">
+        </div>
+        <div class="imgbox tablet-dissapear">
+          <img src="src/Gallery/Wagaya-new-04-IMG_8097.JPG" alt="">
         </div>
       </div>
+      <div class="gap"></div>
+      <div class="gallery">
+        <div class="descbox">
+          <div class="pfp">
+            <img src="src/oneworldhead.jpg" alt="">
+            <img src="src/genre.jpeg" alt="">
+          </div>
+          <div class="desc">
+            <h2>One World Bakti sosial</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur incidunt, possimus minima
+              perferendis aut necessitatibus voluptatem dolor magnam, accusantium eveniet explicabo. Pariatur
+              accusamus unde ullam, deleniti beatae omnis dicta! Voluptatum!</p>
+            <button>Album Link</button>
+          </div>
+        </div>
+        <div class="location">
+          <span class="material-symbols-outlined galleryicon" id="galleryicon">location_on</span>
+          <h2>Hope Children</h2>
+        </div>
+        <div class="date">
+          <span class="material-symbols-outlined galleryicon" id="galleryicon">
+            schedule
+          </span>
+          <h2>4 Juni 2022</h2>
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/HopeChildren-01-017-IMG_8203-min.JPG">
+        </div>
+        <div class="imgbox tablet-dissapear">
+          <img src="src/Gallery/HopeChildren-02-019-IMG_8250-min.JPG">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/HopeChildren-03-005-20220704134854_IMG_2573-min.JPG">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/HopeChildren-04-007-20220704140843_IMG_2634-min.JPG" alt="">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/HopeChildren-05-IMG_2270.JPG" alt="">
+        </div>
+        <div class="imgbox">
+          <img src="src/Gallery/HopeChildren-06-IMG_2388.JPG" alt="">
+        </div>
+        <div class="imgbox" id="ls1">
+          <img src="src/Gallery/HopeChildren-new-01-20220704143031_IMG_2704.JPG" alt="">
+        </div>
+        <div class="imgbox" id="ls2">
+          <img src="src/Gallery/HopeChildren-new-02-IMG_2399-min.JPG" alt="">
+        </div>
+      </div>
+    </div>
     </div>
   </main>
   <div class="gap"></div>
   <footer>
-    <div class="wrapper">
-      <div class="foogrid">
+    <div class="container">
+      <div class="footer-flex">
         <div class="footer-logo">
-          <img class="logo" id="logofoot" src="src/One-World.png">
+          <img class="logo" id="logofoot" src="src/One-World.png" alt="OneWorld Logo">
           <p>
             Organisasi yang bergerak di bidang sosial guna menyalurkan kebahagiaan & kehangatan bagi semua dengan
             prinsip “dari kita, oleh kita & untuk semua”
           </p>
         </div>
-        <ul class="fooul">
-          <li><strong>One World Organization</strong></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="Gallery.html">Gallery</a></li>
-          <li><a href="">Donate</a></li>
-          <li><a href="">Events</a></li>
-        </ul>
-        <ul class="fooul">
-          <li><strong>Social Media</strong></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
+        <div class="footer-col">
+          <ul>
+            <li><strong>One World Organization</strong></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="">Donate</a></li>
+            <li><a href="">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li><strong>Social Media</strong></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
-      <p class="cp">Copyright 2022 by One World. All Rights Reserved.</p>
+      <div class="footer-cp">
+        <p class="cp">Copyright 2022 by One World. All Rights Reserved.</p>
+      </div>
     </div>
 
   </footer>
+  <script src="nav.js"></script>
 </body>
 
 </html>
