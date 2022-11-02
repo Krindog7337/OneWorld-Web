@@ -11,36 +11,50 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Plus+Jakarta+Sans&family=Poppins&display=swap');
   </style>
   <link rel="icon" href="src/oneworldhead.jpg">
+  <script src="index.js" defer  ></script>
 </head>
 
 <body>
-  <header>
-    <div class="header-entry">
-      <nav class="navbar">
-        <a href="Home.html"><img class="logo" id="logonav" href="Home.html" src="src/One-World.png"
-            alt="one world logo"></a>
-        <ul class="nav-list">
-          <li class="topli"><a href="">Join Us!</a></li>
-          <li class="topli"><a href="Gallery.html">Gallery</a></li>
-          <li class="topli"><a href="donate.html">Donate</a></li>
-          <li class="topli"><a href="https://discord.gg/EytfCJyP">Contact</a></li>
+  <header class="primary-header">
+    <div class="nav-container container flex">
+      <div>
+        <img class="logo" src="src/One-World.png" alt="One World">
+      </div>
+      
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html">Donate</a>
+          </li>
+          <li>
+            <a href="Gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="index.html">Contact</a>
+          </li>
         </ul>
       </nav>
-      <div class="header-content">
-        <h1 class="head-title">
-          ONE WORLD
-        </h1>
-        <h2 class="head-subtitle">
-          Dari kita, Oleh kita, dan Untuk semua
-        </h2>
-        <button class="header-join">
-          Join Us!
-        </button>
-      </div>
+    </div>
+    <div class="header-content">
+      <h1 class="head-title">
+        ONE WORLD
+      </h1>
+      <h2 class="head-subtitle">
+        Dari kita, Oleh kita, dan Untuk semua
+      </h2>
+      <button class="header-join">
+        Join Us!
+      </button>
+    </div>
     </div>
   </header>
   <main>
-    <div class="wrapper">
+    <div class="container">
       <div class="entry">
         <section class="intro">
           <h1>One World</h1>
@@ -100,7 +114,7 @@
     </div>
   </main>
   <footer>
-    <div class="wrapper">
+    <div class="container">
       <div class="footer-flex">
         <div class="footer-logo">
           <img class="logo" id="logofoot" src="src/One-World.png" alt="OneWorld Logo">
@@ -135,5 +149,4 @@
 
   </footer>
 </body>
-
 </html>
