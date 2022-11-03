@@ -54,7 +54,7 @@ h3 {
 
 /* Header */
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/header.JPG');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/header.JPG');
   background-position: bottom;
   background-size: cover;
   justify-content: center;
@@ -378,7 +378,7 @@ h2 {
     top: var(--space-m);
     right: var(--space-2xl);
     align-items: flex-end;
-    background: url(src/icons/icons8-menu-30.png);
+    background: url('/src/icons/icons8-menu-30.png');
     background-repeat: none;
     width: 30px;
     aspect-ratio: 1;
