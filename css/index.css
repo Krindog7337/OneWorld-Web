@@ -61,6 +61,7 @@ header {
   height: 100vh;
   color: #DDE3E3;
 }
+
 .primary-header {
   display: flex;
   flex-direction: column;
@@ -104,20 +105,32 @@ header {
 }
 
 /* Primary header */
+.nav-box-bg {
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  height: 82px;
+  width: 100%;
+  z-index: 0;
+}
+
+.nav-container {
+  display: flex;
+  height: 82px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
 .logo-container {
   z-index: 1001;
 }
+
 .logo {
   width: 5rem;
   height: auto;
   margin: var(--space-xs);
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .primary-navigation {
   list-style: none;
@@ -350,7 +363,6 @@ h2 {
 
 /* Responsive */
 @media (max-width:768px) {
-
   .primary-navigation {
     position: absolute;
     z-index: 1000;
@@ -363,6 +375,7 @@ h2 {
     transition: transform 300ms ease-in-out;
     font-size: var(--step-1);
   }
+
   .primary-navigation[data-visible="true"] {
     transform: translateY(0%);
   }
@@ -375,7 +388,7 @@ h2 {
     display: block;
     position: absolute;
     z-index: 9999;
-    top: var(--space-m);
+    top: var(--space-l);
     right: var(--space-2xl);
     align-items: flex-end;
     background: url('/src/icons/icons8-menu-30.png');

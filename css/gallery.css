@@ -68,6 +68,12 @@ header {
 }
 
 /* Primary header */
+.nav-container {
+  display: flex;
+  height: 82px;
+  align-items: center;
+  justify-content: space-between;
+}
 .logo-container {
   z-index: 1001;
 }
@@ -77,11 +83,7 @@ header {
   margin: var(--space-xs);
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 .primary-navigation {
   list-style: none;
@@ -337,7 +339,7 @@ footer {
     display: block;
     position: absolute;
     z-index: 9999;
-    top: var(--space-m);
+    top: var(--space-l);
     right: var(--space-2xl);
     align-items: flex-end;
     background: url('/src/icons/icons8-menu-30.png');
